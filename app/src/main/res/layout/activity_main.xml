@@ -1,0 +1,106 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <!-- Plus button layout initially set to GONE -->
+
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/rounded_background"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:outlineProvider="background"
+        android:padding="20dp">
+
+        <!-- Your existing layout content here -->
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="U know which number"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!-- Button with top margin for spacing -->
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/editText1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="508dp"
+        android:background="@drawable/rounded_background"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:outlineProvider="background"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp">
+
+        <!-- Your existing layout content here -->
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter some text here"
+            android:padding="10dp" />
+
+        <!-- Button with top margin for spacing -->
+        <Button
+            android:id="@+id/submitbutton2"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+android:id="@+id/plusButtonLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:visibility="gone"
+android:gravity="center">
+
+<Button
+    android:id="@+id/plusButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+"
+    android:textSize="24sp"
+    android:background="?android:selectableItemBackground"
+    android:onClick="onPlusButtonClick"/>
+</RelativeLayout>
+    </RelativeLayout>

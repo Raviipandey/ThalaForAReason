@@ -1,0 +1,10 @@
+<!-- res/layout/popup_layout.xml -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:text="Popup Content"
+    android:textColor="#000000"
+    android:background="#FFFFFF"/>
